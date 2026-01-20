@@ -13,6 +13,12 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Leaflet CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
 </head>
 <body>
 
@@ -53,9 +59,47 @@
 </section>
 
 <section class="cta">
-    <h2>Замовте прибирання вже сьогодні<br>
-        ІГОР МЕНІ ПОТРІБНІ РЕАЛЬНІ ФОТОГРАФІЇ ЩОБ ЗАМІНИТИ ТІ ЩО НА САЙТІ ЯКЩО Є ТО СКИНЬ МЕНІ У ТЕЛЕГРАМ ТА МЕНІ ПОТРІБНО ЩОБ ТИ СКАЗАВ ЩО ПОМІнЯТИ НА САЙТІ ТА ЩО ДОБАВИТИ ОКЕЙ ??? </h2>
+    <h2>
+        Замовте прибирання вже сьогодні<br>
+        Працюємо у вашому місті з гарантією якості
+    </h2>
     <a href="contacts.html" class="btn btn-dark">Залишити заявку</a>
+</section>
+
+<section class="service-area container">
+    <h2>Де ми працюємо</h2>
+
+    <ul class="cities">
+        <li>📍 Київ</li>
+        <li>📍 Львів</li>
+        <li>📍 Одеса</li>
+        <li>📍 Дніпро</li>
+    </ul>
+
+    <iframe
+        src="https://www.google.com/maps/d/embed?mid=1"
+        width="100%"
+        height="350"
+        style="border:0;"
+        loading="lazy">
+    </iframe>
+</section>
+
+<section class="contact-form container">
+    <h2>Залишити заявку</h2>
+
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+        <input type="text" name="name" placeholder="Ваше імʼя" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <textarea name="message" placeholder="Що потрібно прибрати?"></textarea>
+
+        <button type="submit" class="btn">Надіслати</button>
+    </form>
+</section>
+
+<section class="map-section container">
+    <h2>Зона обслуговування</h2>
+    <div id="map"></div>
 </section>
 
 <footer class="footer">
@@ -63,5 +107,9 @@
 </footer>
 
 <script src="js/main.js"></script>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 </body>
 </html>
